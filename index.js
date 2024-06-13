@@ -267,6 +267,12 @@ function getSchemaArray() {
             column: 'Id',
             type: String,
             value: data => _.get(data, 'id'),
+            width: 40,
+        },
+        {
+            column: 'Params',
+            type: String,
+            value: data => _.get(data, 'params'),
             width: 20,
         },
     ];
